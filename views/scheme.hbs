@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Farmers Scheme</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Set background color and padding for the whole page */
+body {
+  background-color: #f9f9f9;
+margin: -2.45vh;}
+
+/* Set max-width for the page content */
+/* .w3-main {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+/* Set equal height for the grid items */
+/* .w3-container {
+  height: 400px;
+} */
+
+/* Add colors to the grid items */
+.w3-container:nth-child(odd) {
+  background-color:green;
+}
+
+.w3-container:nth-child(even) {
+  background-color: #fff;
+}
+
+/* Add padding and margins for the grid items */
+.w3-container > .w3-container {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Add hover effect to the images */
+.w3-hover-opacity {
+  transition: 0.3s;
+}
+
+.w3-hover-opacity:hover {
+  opacity: 0.7;
+}
+
+/* Customize header style */
+#portfolio {
+  background-color:;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#portfolio h1 {
+  margin: 0;
+}
+
+/* Customize section style */
+section {
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin: 0;
+}
+
+section p {
+  margin: 10px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Clearfix for floating grid items */
+.w3-row-padding:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .w3-container {
+    height: auto;
+  }
+}
+
+/* Farmer Scheme styling */
+.farmer-scheme {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.farmer-scheme .scheme-item {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.farmer-scheme .scheme-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.farmer-scheme .scheme-item h3 {
+  margin: 0;
+  color: #333;
+}
+
+.farmer-scheme .scheme-item p {
+  color: #666;
+}
+
+div#navbarSupportedContent {
+    position: relative;
+    left: 24vw;
+}
+
+.logoup{
+      width: 3.5vw;
+    border-radius: 2rem;
+}
+
+
+button.btcl {
+    background: rgb(191 192 193);
+}
+
+
+
+</style>
+
+    {{!-- <link rel="stylesheet" href="/static/css/swiper-bundle.min.css">
+
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="/static/css/scrollreveal.min.js">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css"> --}}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <a href="#" class="logo-content flex">
+                        <img class="logoup" src="/static/images/KrishiTech.png" alt="">
+                        <!-- <span class="logo-text">Krishitech</span> -->
+                    </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+      </li>
+
+
+      {{!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> --}}
+
+        <li class="nav-item">
+        <a class="nav-link" href="/service">Crop Suggestion</a>
+      </li>
+
+              <li class="nav-item">
+        <a class="nav-link" href="/fzsg">Fertilizer Suggestion</a>
+      </li>
+
+
+            <li class="nav-item">
+        <a class="nav-link" href="/scheme">Scheme</a>
+      </li>
+
+            <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+
+
+    </ul>
+    {{!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> --}}
+  </div>
+</nav>
+
+
+
+
+
+
+  
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+  <!-- Header -->
+  <div id="portfolio">
+    <div class="w3-container">
+      <h1><b>Farmers Scheme</b></h1>
+    </div>
+  <div/>
+
+  <!-- Main Content -->
+  <section>
+    <div class="farmer-scheme">
+      <div class="scheme-item">
+        <img src="/static/images/a.jpg" alt="Rice">
+        <h3>1. Pradhan Mantri Krishi Sinchai Yojana (PMKSY)</h3>
+        <p>At the top of the list of agricultural schemes in India is the Pradhan Mantri Krishi Sinchai Yojana, or PMKSY, a centrally funded initiative started by the Government of India in 2015. Its goal is to increase farm output and ensure the efficient use of water resources in the agricultural sector. The scheme's major goal is to increase the area under irrigation and improve water efficiency through various components and interventions.</p>
+        <button class="btcl"><a target="_blank" href="https://pmksy-gov-in.translate.goog/?_x_tr_sl=en&_x_tr_tl=hi&_x_tr_hl=hi&_x_tr_pto=tc">Read more</a></button>
+      </div>
+      <div class="scheme-item">
+        <img src="/static/images/b.jpg" alt="Oats">
+        <h3>2. Paramparagat Krishi Vikas Yojana (PKVY)</h3>
+        <p>The national government established another agriculture scheme for farmers in 2015. This scheme was Paramparagat Krishi Vikas Yojana. The scheme's goal was to encourage organic agricultural practices in India. The initiative promotes farmers to use traditional and organic farming practices, reducing their reliance on chemical inputs. Its goals include increasing soil fertility, promoting sustainable agriculture, and ensuring the production of chemical-free, nutritious agricultural goods.</p>
+        <button class="btcl"><a target="_blank" href="https://dmsouthwest.delhi.gov.in/scheme/paramparagat-krishi-vikas-yojana/">Read more</a></button>
+      </div>
+      <div class="scheme-item">
+        <img src="/static/images/c.jpg" alt="Wheat">
+        <h3>3. Pradhan Mantri Fasal Bima Yojana (PMFBY)</h3>
+        <p>Lose of crops is a major issue in India and it leads to farmer suicide as well. To address this issue, the central government launched Pradhan Mantri Fasal Bima Yojana (PMFBY) in the year 2016.  
+
+          It is a crop insurance-related agriculture scheme that attempts to offer farmers financial assistance and risk reduction in the event of crop loss or damage caused by natural disasters, pests, and diseases. It aims to guarantee the agricultural sector's overall stability and to shield farmers from financial hardship caused by crop losses.</p>
+          <button class="btcl"><a target="_blank" href="https://pmfby.gov.in/">Read more</a></button>
+      </div>
+      <div class="scheme-item">
+        <img src="/static/images/d.jpg" alt="Corn">
+        <h3>4. Gramin Bhandaran Yojana</h3>
+        <p>Up next in this list of agricultural schemes in India is Gramin Bhandaran Yojana for Rural Godown Scheme. It was launched in the year 2001 by the Indian government to provide financial assistance for the construction of rural storage infrastructure. 
+            This major scheme for farmers in India addressed the huge shortage of storage facilities in rural areas because of which Indian farmers had to face huge post-harvest losses and distress selling of agricultural produce.
+
+            Under this government scheme for farmers, financial assistance is provided in the form of subsidies to eligible individuals, farmers, and organizations for the construction of storage infrastructure such as godowns (warehouses), cold storage, and other post-harvest management facilities. Hence, it’s one of the most useful central government subsidy schemes for agriculture. </p>
+            <button class="btcl"><a target="_blank" href="https://www.nabard.org/hindi/content1.aspx?id=593&catid=23&mid=530">Read more</a></button>
+      </div>
+      <div class="scheme-item">
+        <img src="/static/images/e.jpg" alt="Potato">
+        <h3>5. Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY)</h3>
+        <p>Pradhan Mantri Kisan Maan-Dhan Yojana (PM-KMY) is a pension scheme launched by the Government of India to provide social security to small and marginal farmers. This scheme is especially for farmers between the age of 18-40 years and aims to ensure that farmers are having a continual source of income even when they are not able to work in fields. It was launched in September 2019 as part of the government's efforts to address the welfare and financial needs of farmers. 
+The Scheme is regulated by the Department of Agriculture. The farmer has to register themselves under the pension fund. To get the benefit of this scheme
+        
+            This is relatively a new scheme for farmers offering them a minimum monthly income of INR 3,000 for farmers after the age of 60.</p>
+            <button class="btcl"><a target="_blank" href="https://sarkarialert.net/pm-kisan-maandhan-yojana/#:~:text=Mandhan%20Yojana%20Kya%20Hai%20%2F%20%E0%A4%AE%E0%A4%BE%E0%A4%A8%E0%A4%A7%E0%A4%A8%20%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE%20%E0%A4%95%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%B9%E0%A5%88%3F,-%E0%A4%87%E0%A4%B8%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A7%E0%A4%BE%E0%A4%A8%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A5%80%20%E0%A4%95%E0%A4%BF%E0%A4%B8%E0%A4%BE%E0%A4%A8&text=%E0%A4%87%E0%A4%B8%20%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE%20%E0%A4%95%E0%A5%87%20%E0%A4%A4%E0%A4%B9%E0%A4%A4%20%E0%A4%AF%E0%A4%A6%E0%A4%BF,%E0%A4%B0%E0%A5%81%E0%A4%AA%E0%A4%AF%E0%A5%87%20%E0%A4%AE%E0%A4%BE%E0%A4%B8%E0%A4%BF%E0%A4%95%20%E0%A4%AA%E0%A5%87%E0%A4%82%E0%A4%B6%E0%A4%A8%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A6%E0%A4%BE%E0%A4%A8%20%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%97%E0%A5%80%E0%A5%A4">Read more</a></button>
+      </div>
+      <div class="scheme-item">
+        <img src="/static/images/f.jpg" alt="Fruits">
+        <h3>6. PM Kisan Samman Nidhi Yojana</h3>
+        <p>The next central government agriculture scheme that we want to list here is PM Kisan Samman Nidhi Yojana. Let’s understand what this scheme is. It is a government-funded scheme that aims to provide ample income support to small and marginal farmers in India. 
+
+            
+            The main objective of the scheme is to transfer an amount of INR 6000 to the account of farmers annually so that they can easily take care of their farming implements and other agriculture-related expenses without any fear or concern. 
+            <button  class="btcl"><a target="_blank" href="https://pmkisan.gov.in/">Read more</a></button>
+             </p>
+      </div>
+    </div>
+  </section>
+
+  
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="/static/css/swiper-bundle.min.css">
+
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="/static/css/scrollreveal.min.js">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<!-- Header -->
+
+
+
+
+    <header class="header">
+            <nav class="nav container flex">
+                    <a href="#" class="logo-content flex">
+                        <img class="logoup" src="/static/images/KrishiTech.png" alt="">
+                        <!-- <span class="logo-text">Krishitech</span> -->
+                    </a>
+
+                    <div class="menu-content">
+                            <ul class="menu-list flex">
+                                    <li><a href="/" class="nav-link active-navlink">home</a></li>
+                                    {{!-- <li><a href="#about" class="nav-link">about</a></li> --}}
+                                    {{!-- <li><a href="/service" class="nav-link">Services</a></li> --}}
+                                    <li><a href="/" class="nav-link">menu</a></li>
+                                    <li><a href="/" class="nav-link">review</a></li>
+                                                                        <li>
+                                        <div class="dropdown">
+                                                <button class="dropbtn">Services</button>
+                                                <div class="dropdown-content">
+                                                    <a href="/service">Crop Recommendation</a>
+                                                    <a href="/fzsg">Fertilizer Recommendation</a>
+                                                    <a href="">Contact</a>
+                                                </div>
+                                            </div>
+                                    </li>
+
+                                          <li><a href="/scheme" class="nav-link">Scheme</a></li>
+
+                                    <li><a href="/contact" class="nav-link">contact</a></li>
+
+                            </ul>
+
+                            <div class="media-icons flex">
+                                    <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                    <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                    <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>
+                                    <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                                    <a href="https://www.youtube.com/login"><i class='bx bxl-youtube'></i></a>
+                            </div>
+
+                            <i class='bx bx-x navClose-btn'></i>
+                        </div>
+                        
+                        <!-- <div class="contact-content flex">
+                            <i class='bx bx-phone phone-icon' ></i>
+                            <span class="phone-number">+919325206234</span>
+                            
+                        </div> -->
+                        
+                       <div >
+
+                        <div class="sl">
+                        <button class="su" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign up</button> 
+                        <button class="su" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Log In</button> 
+                         </div>
+                        <div id="id01" class="modal">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <form class="modal-content" action="/action_page.php">
+                                  <div class="container">
+                                    <h1>Sign Up</h1>
+                                    <p>Please fill in this form to create an account.</p>
+                                    <hr>
+
+                                    <label for="email"><b>Full Name</b></label>
+                                    <input type="text" placeholder="Enter Full Name" name="Full Name" required>
+
+
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+                              
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                              
+                                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                    
+                                    <label>
+                                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                    </label>
+                              
+                                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                              
+                                    <div class="clearfix">
+                                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signupbtn">Sign Up</button>
+                                      {{!-- <button type="button" onclick="document.getElementById('id01').style.display='none'"  class="signupbtn">Sign Up</button> --}}
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+
+
+                        <div id="id02" class="modal">
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                <form class="modal-content" action="/action_page.php">
+                                  <div class="container">
+                                    <h1>Log In</h1>
+                                    <p>Please fill in this form to create an account.</p>
+                                    <hr>
+
+                                    <label for="email"><b>Full Name</b></label>
+                                    <input type="text" placeholder="Enter Full Name" name="Full Name" required>
+
+
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" placeholder="Enter Email" name="email" required>
+                              
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                              
+                                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                                    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                    
+                                    <label>
+                                      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                    </label>
+                              
+                                    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                              
+                                    <div class="clearfix">
+                                      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="signupbtn">Sign Up</button>
+                                      {{!-- <button type="button" onclick="document.getElementById('id01').style.display='none'"  class="signupbtn">Sign Up</button> --}}
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+
+                              
+                        <!-- <button class="su lu">Log  in</button>  -->
+
+                       </div>
+
+
+                       <div >
+                              
+                        <!-- <button class="su lu">Log  in</button>  -->
+
+                       </div>
+
+
+                        <i class='bx bx-menu navOpen-btn'></i>
+                </nav>
+        
+    </header>
+
+
+<!-- Home Section -->
+    
+
+    
+<!-- About Section -->
+                <!-- <div class="about-content container">
+                        <div class="about-imageContent">
+                                <img src="images/aboutImg.jpg" alt="" class="about-img">
+
+                                <div class="aboutImg-textBox">
+                                        <i class='bx bx-heart heart-icon flex'></i>
+                                        <p class="content-description">I really love the Cappucino. The coffee war very smooth.</p>
+                                </div>
+                        </div>
+
+                        <div class="about-details">
+                                <div class="about-text">
+                                        <h4 class="content-subtitle"><i>Our coffee Shop</i></h4>
+                                        <h2 class="content-title">We Combine Classics <br> and Modernity</h2>
+                                        <p class="content-description">We appreciate your trust greatly. 
+                                                Our clients choose us and our products because theyknow we are the best.</p>
+
+                                        <ul class="about-lists flex">
+                                                <li class="about-list">Cappucino</li>
+                                                <li class="about-list dot">.</li>
+                                                <li class="about-list">Late</li>
+                                                <li class="about-list dot">.</li>
+                                                <li class="about-list">Arabica</li>
+                                        </ul>
+                                </div>
+
+                                <div class="about-buttons flex">
+                                        <button class="button">About Us</button>
+                                        <a href="#" class="about-link flex">
+                                                <span class="link-text">see more</span>
+                                                <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                                        </a>
+                                </div>
+                        </div>
+
+                </div> -->
+        <section class="yashser section about " id="about">
+
+<div class="ittem1">
+                <h1 class="cropsuggestion">Crop Suggestion</h1>
+                <label for="location">Location:</label>
+                <input type="text" id="location" placeholder="Enter location">
+                 <button id="weather-btn">Weather</button>
+
+  <div id="weather-info">
+    <p>Temperature: <span id="temperature"></span></p>
+    <p>Humidity: <span id="humidity"></span></p>
+    <p>Rainfall: <span id="rainfall"></span></p>
+  </div>
+
+
+
+         <div class="formm">
+                <label for="location">Temperature(in cc):</label>
+                <input type="number" class="formitem" name="" id="" placeholder="Enter Temperature">
+
+                <label for="location">Humidity(%):</label>
+                <input type="number" class="formitem" name="" id="" placeholder="Enter Humidity">
+
+                {{!-- <label for="location">Potass:</label>
+                <input type="number" class="formitem" name="" id="" placeholder="Enter Potassium"> --}}
+
+                <label for="location">PH Level:</label>
+                <input type="number" class="formitem" name="" id="" placeholder="Enter PH Level">
+
+                <label for="location">Rainfall (in mm):</label>
+                <input type="number" class="formitem" name="" id="" placeholder="Enter Rainfall">
+        </div>
+                <button id="predict-btn">Predict</button>
+            </div>
+
+
+            <div class="ittem2">
+
+                {{!-- <h2 class="ih2" >Suggested Crops:</h2> --}}
+                <ul id="crop-list"></ul>
+            
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+    
+<!-- Menu Section -->
+        <section class="section menu" id="menu">
+            <div class="menu-container container">
+                    <div class="meu-text">
+                            <h4 class="section-subtitle"><i>Our Menu</i></h4>
+                            <h2 class="section-title">Our Popular Menu</h2>
+                            <p class="section-description">
+                                Our place designed by pro architecture with psychologist to build best place suit you.  Our place designed by pro architecture with psychologist to build best place suit you.
+                            </p>
+                    </div>
+
+                    <div class="menu-content">
+                            <div class="menu-items">
+                                    <div class="menu-item flex">
+                                            <img src="images/menuImg1.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
+                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
+                                            </div>
+
+                                            <div class="menuItem-price flex">
+                                                    <span class="discount-price">$18.99</span>
+                                                    <span class="real-price">$20.66</span>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/menuImg1.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
+                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
+                                            </div>
+
+                                            <div class="menuItem-price flex">
+                                                    <span class="discount-price">$18.99</span>
+                                                    <span class="real-price">$20.66</span>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/menuImg1.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
+                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
+                                            </div>
+
+                                            <div class="menuItem-price flex">
+                                                    <span class="discount-price">$18.99</span>
+                                                    <span class="real-price">$20.66</span>
+                                            </div>
+                                    </div>
+                                    <div class="menu-item flex">
+                                            <img src="images/menuImg1.png" alt="" class="menu-img">
+
+                                            <div class="menuItem-details">
+                                                    <h4 class="menuItem-topic">Americano Roasted Coffee</h4>
+                                                    <p class="menuItem-des">It is a long established fact that a reader will be distracted by the readable.</p>
+                                            </div>
+
+                                            <div class="menuItem-price flex">
+                                                    <span class="discount-price">$18.99</span>
+                                                    <span class="real-price">$20.66</span>
+                                            </div>
+                                    </div>
+                            </div>
+
+        </section> 
+
+    
+<!-- Scroll Up -->
+        <a href="#home" class="scrollUp-btn flex">
+                <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+        </a>
+
+</main>
+
+<!-- Swiper JS -->
+<script src="/static/js/swiper-bundle.min.js"></script>
+
+<!-- Scroll Reveal -->
+<script src="/static/js/scrollreveal.js"></script>
+
+<!-- JavaScript -->
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

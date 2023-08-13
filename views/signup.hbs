@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-container .sub {
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container .sub:hover {
+            background-color: #45a049;
+        }
+
+a {
+    /* margin: 6vh 0; */
+    position: relative;
+    top: 1vh;
+}
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="post">
+            <input placeholder="Name" name="name" type="text">
+            <br>
+            <input placeholder="Password" name="password" type="password">
+            <br>
+                <input placeholder="Re-enter Password"  type="password">
+            <br>
+
+            <input class="sub" type="submit" value="Sign Up">
+                   <a href="/login">Already Account ?</a>
+
+        </form>
+    </div>
+</body>
+</html>

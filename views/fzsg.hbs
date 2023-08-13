@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    /* background-image: url('bgservice.jpg') ; */
+}
+
+.yashser
+{
+  width: 100vw;
+  /* margin: 10px; */
+  border: 2px solid black;
+  /* border-radius: 2rem; */
+  box-shadow: 10px 6px 43px #888888;
+  display: flex;
+
+}
+
+.section {
+    padding: 8.5rem 1rem;
+}
+
+.formm {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+input.formitem {
+  padding: 0.5vh 0.5vw;
+  margin: 2vh;
+  background-color: #f1f1f1;
+  border: 0px;
+  width: 35vw;
+
+}
+
+.box1 {
+    border: 2px solid black;
+    /* color: black; */
+    height: 72vh;
+    width: 40vw;
+    border-radius: 1rem;
+    padding: 1vh 1vw;
+    background: rgb(190 197 175);
+}
+
+h1.cropsuggestion {
+    text-align: center;button.btn {
+    /* background: green; */
+    background-color: rgb(4, 170, 109);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    display: block;
+    margin: auto;
+    width: 21vw;
+}
+}
+
+button.btn {
+    /* background: green; */
+    background-color: rgb(4, 170, 109);
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    padding: 14px 20px;
+    margin: 8px 0px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    display: block;
+    margin: auto;
+    width: 21vw;    
+
+        font-size: 1rem;
+
+}
+
+select#crop {
+    margin: 1vh;
+    width: 8vw;
+    height: 4vh;
+    text-align: center;
+    /* color: #ff5s151; */
+}
+
+.box{
+    display: flex;
+}
+
+.ih2{
+  text-align: center;
+  padding: 1.5vh;
+}
+
+.box2 {
+    /* border: 2px solid; */
+    margin: 0 2.5vw;
+    width: 49vw;
+    border-radius: 1.5rem;
+    color: whitesmoke;
+
+}
+
+div#suggested-fertilizer {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+        margin: -9.5vh 0;
+
+}
+
+
+img {
+    width: 63vh;
+}
+
+
+
+section#about {
+    background-image: url(/static/images/bgservice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#navbarSupportedContent {
+    position: relative;
+    left: 24vw;
+}
+
+.logoup{
+      width: 3.5vw;
+    border-radius: 2rem;
+}
+
+.form-inline{
+  
+    DISPLAY: FLEX;
+    position: relative;
+    right: -60vh;
+
+}
+
+form.form-inline {
+    width: 12vw;
+    height: 6vh;
+}
+
+.iam{
+      width: 8vw;
+
+}
+
+
+</style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+ <a href="#" class="logo-content flex">
+                        <img class="logoup" src="/static/images/KrishiTech.png" alt="">
+                        <!-- <span class="logo-text">Krishitech</span> -->
+                    </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only"></span></a>
+      </li>
+
+
+      {{!-- <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li> --}}
+
+        <li class="nav-item">
+        <a class="nav-link" href="/service">Crop Suggestion</a>
+      </li>
+
+              <li class="nav-item">
+        <a class="nav-link" href="/fzsg">Fertilizer Suggestion</a>
+      </li>
+
+
+            <li class="nav-item">
+        <a class="nav-link" href="/scheme">Scheme</a>
+      </li>
+
+            <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+
+
+    </ul>
+    {{!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> --}}
+
+        <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      {{!-- <button class="btn btn-outline-success iam my-2 my-sm-0" type="submit">Search</button> --}}
+    </form>
+    
+  </div>
+</nav>
+
+
+
+
+    
+
+    <section class="yashser section about formm " id="about">
+
+        <div class="box">
+
+<div class="box1">
+
+    <h1 class="cropsuggestion" >Fertilizer Suggestion</h1>
+
+
+    <div class="form-group">
+      <label for="nitrogen">Nitrogen:</label>
+      <br>
+      <input type="number" class="formitem" id="nitrogen" placeholder="Enter Nitrogen" min="0" step="0.01" required>
+    </div>
+    <div class="form-group">
+      <label for="phosphorous">Phosphorous:</label>
+      <br>
+      <input type="number" class="formitem" id="phosphorous" placeholder="Enter phosphorous" min="0" step="0.01" required>
+    </div>
+    <div class="form-group">
+      <label for="potassium">Potassium:</label>
+      <br>
+      <input type="number" class="formitem" id="potassium" placeholder="Enter potassium" min="0" step="0.01" required>
+    </div>
+    <div class="form-group">
+      <label for="crop">Crop:</label>
+      <br>
+      <select id="crop">
+        <option value="tomato">Tomato</option>
+        <option value="soyabean">Soyabean</option>
+        <option value="wheat">Wheat</option>
+        <option value="potato">Potato</option>
+        <option value="rice">Rice</option>
+        <option value="maize">Maize</option>
+        <option value="tur">Tur</option>
+        <option value="jute">Jute</option>
+        <option value="groundnut">Groundnut</option>
+        <option value="peas">Peas</option>
+        {{!-- <option value="millets">Millets</option> --}}
+         <option value="cotton">Cotton</option>
+
+
+      </select>
+    </div>
+    <button class="btn" onclick="suggestFertilizer()">Suggest Fertilizer</button>
+  
+</div>
+
+<div class="box2">
+
+    <div id="suggested-fertilizer"></div>
+             
+</div>
+</div>
+</section>
+    
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script>
+    function suggestFertilizer() {
+      var nitrogen = parseFloat(document.getElementById('nitrogen').value);
+      var phosphorous = parseFloat(document.getElementById('phosphorous').value);
+      var potassium = parseFloat(document.getElementById('potassium').value);
+      var crop = document.getElementById('crop').value;
+
+      var suggestedFertilizer;
+      var fertilizerImage = document.createElement('img');
+      fertilizerImage.alt = crop; // Use the crop name as the alt text
+
+      if (crop === 'wheat') {
+        suggestedFertilizer = 'High nitrogen, phosphorous, and potassium fertilizer.';
+        fertilizerImage.src = '/static/images/wheatfertilizer1.jpeg';
+      } 
+      else if (crop === 'tomato') {
+        suggestedFertilizer = 'Suggestion for tomato fertilizer goes here.';
+        fertilizerImage.src = '/static/images/tomatofertilizer1.jpeg';
+      } 
+      else if (crop === 'soyabean') {
+        suggestedFertilizer = 'Suggestion for soyabean fertilizer goes here.';
+        fertilizerImage.src = '/static/images/soyabeanfertilizer1.jpeg';
+      } 
+      else if (crop === 'jute') {
+        suggestedFertilizer = 'Suggestion for jute fertilizer goes here.';
+        fertilizerImage.src = '/static/images/jutefertilizer1.jpeg';
+      } 
+      else if (crop === 'groundnut') {
+        suggestedFertilizer = 'Suggestion for wheat groundnut goes here.';
+        fertilizerImage.src = '/static/images/groundnutfertilizer2.jpeg';
+      } 
+       else if (crop === 'peas') {
+        suggestedFertilizer = 'Suggestion for peas fertilizer goes here.';
+        fertilizerImage.src = '/static/images/peasfertilizer1.jpeg';
+      } 
+       else if (crop === 'millets') {
+        suggestedFertilizer = 'Suggestion for wheat fertilizer goes here.';
+        fertilizerImage.src = '/static/images/milletsfertilizer.jpeg';
+      } 
+      else if (crop === 'potato') {
+        suggestedFertilizer = 'Suggestion for potato fertilizer goes here.';
+        fertilizerImage.src = '/static/images/potatofertilizer1.jpeg';
+      } 
+      else if (crop === 'rice') {
+        suggestedFertilizer = 'Suggestion for rice fertilizer goes here.';
+        fertilizerImage.src = '/static/images/ricefertilizer1.jpeg';
+      } 
+      else if (crop === 'maize') {
+        suggestedFertilizer = 'Suggestion for maize fertilizer goes here.';
+        fertilizerImage.src = '/static/images/maizefertilizer1.jpeg';
+      } 
+       else if (crop === 'barley') {
+        suggestedFertilizer = 'Suggestion for barley fertilizer goes here.';
+        fertilizerImage.src = '/static/images/barleyfertilizer1.jpeg';
+      } 
+       else if (crop === 'tur') {
+        suggestedFertilizer = 'Suggestion for tur fertilizer goes here.';
+        fertilizerImage.src = '/static/images/turfertilizer1.jpeg';
+      } 
+      else if (crop === 'cotton') {
+        suggestedFertilizer = 'Suggestion for cotton fertilizer goes here.';
+        fertilizerImage.src = '/static/images/cottonfertilizer1.jpeg';
+      } 
+      
+      else {
+        suggestedFertilizer = 'Crop not supported.';
+      }
+
+      var suggestedCrop = document.createElement('h2');
+      suggestedCrop.textContent = 'Suggested Fertilizer: ' + crop;
+      suggestedCrop.classList.add("ih2");
+
+      var suggestedFertilizerDiv = document.getElementById('suggested-fertilizer');
+      suggestedFertilizerDiv.innerHTML = ''; // Clear the div before adding new content
+      suggestedFertilizerDiv.appendChild(suggestedCrop);
+      suggestedFertilizerDiv.appendChild(fertilizerImage);
+      suggestedFertilizerDiv.insertAdjacentHTML('beforeend', '<p>' + suggestedFertilizer + '</p>');
+    }
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</html>
